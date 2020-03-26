@@ -12,11 +12,10 @@ public class Bateau {
 
     @Override
     public String toString() {
-        return "Bateau{" +
-                "coordonnees=" + coordonnees +
-                ", modele=" + modele +
-                ", orientation=" + orientation +
-                '}';
+        return "Votre bateau : " +
+                "coordonnees = " + coordonnees +
+                ", Bateau = " + modele +
+                ", Direction = " + orientation ;
     }
 
 

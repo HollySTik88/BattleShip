@@ -9,10 +9,12 @@ public class Coordonnees {
 
     @Override
     public String toString() {
-        return "Coordonnees{" +
-                "hauteur ='" + hauteur + '\'' +
-                ", largeur =" + largeur +
-                '}';
+        return
+                "Coordonees indiquees : " +
+                "hauteur = " + hauteur +
+                " & " +
+                " largeur = " + largeur
+                ;
     }
 
     public String getHauteur() {
