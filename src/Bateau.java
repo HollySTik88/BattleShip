@@ -2,12 +2,12 @@
 public class Bateau {
     private Coordonnees coordonnees;
     private Flotte typeBateau;
-    private Orientation direction;
+    private Orientation orientation;
 
-    public Bateau (Coordonnees coordonnees, Flotte typeBateau, Orientation direction ){
+    public Bateau (Coordonnees coordonnees, Flotte typeBateau, Orientation orientation ){
         this.coordonnees = coordonnees;
         this.typeBateau = typeBateau;
-        this.direction = direction;
+        this.orientation = orientation;
     }
 
     @Override
@@ -15,7 +15,7 @@ public class Bateau {
         return "Votre bateau : "
                 +"\n"+
                 typeBateau + "\n"+
-                direction + "\n"+
+                orientation + "\n"+
                 ", " + coordonnees ;
     }
 
@@ -28,8 +28,8 @@ public class Bateau {
         return typeBateau;
     }
 
-    public Orientation getDirection () {
-        return direction;
+    public Orientation getOrientation () {
+        return orientation;
     }
 
 

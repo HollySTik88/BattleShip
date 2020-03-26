@@ -1,21 +1,22 @@
 public enum Orientation {
-    N ( "Nord"),
-    S ( "Sud"),
-    E ( "Est"),
-    O ( "Ouest");
+    N ("Nord"),
+    S ("Sud"),
+    E ("Est"),
+    O ("Ouest");
 
-        Orientation(String direction){
-            this.direction = direction;
-        }
+    private String orientation;
 
-        public String getDirection() {
-            return direction;
-        }
+    Orientation(String orientation){
+        this.orientation = orientation;
+    }
 
-        public String toString() {
-            return
-                    "Direction : " + direction;
-        }
+    public String getOrientation() {
+        return orientation;
+    }
+    public String toString() {
+        return "Direction : " + orientation ;
+
+    }
 
 
 }
