@@ -1,21 +1,22 @@
 
 public class Bateau {
     private Coordonnees coordonnees;
-    private Flotte modele;
-    private Orientation orientation;
+    private Flotte typeBateau;
+    private Orientation direction;
 
-    public Bateau (Coordonnees coordonnees, Flotte modele, Orientation orientation ){
+    public Bateau (Coordonnees coordonnees, Flotte typeBateau, Orientation direction ){
         this.coordonnees = coordonnees;
-        this.modele = modele;
-        this.orientation = orientation;
+        this.typeBateau = typeBateau;
+        this.direction = direction;
     }
 
     @Override
     public String toString() {
-        return "Votre bateau : " +
-                "coordonnees = " + coordonnees +
-                ", Bateau = " + modele +
-                ", Direction = " + orientation ;
+        return "Votre bateau : "
+                +"\n"+
+                typeBateau + "\n"+
+                direction + "\n"+
+                ", " + coordonnees ;
     }
 
 
@@ -23,12 +24,12 @@ public class Bateau {
         return coordonnees;
     }
 
-    public Flotte getModele() {
-        return modele;
+    public Flotte getTypeBateau() {
+        return typeBateau;
     }
 
-    public Orientation getOrientation () {
-        return orientation;
+    public Orientation getDirection () {
+        return direction;
     }
 
 

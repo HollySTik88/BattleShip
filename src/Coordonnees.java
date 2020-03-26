@@ -1,34 +1,35 @@
 public class Coordonnees {
-    private String hauteur;
-    private int largeur;
+    private String largeur;
+    private int hauteur;
 
-    public Coordonnees (String hauteur, int largeur){
-        this.hauteur = hauteur;
+    public Coordonnees (String largeur, int hauteur){
         this.largeur = largeur;
+        this.hauteur = hauteur;
     }
 
     @Override
     public String toString() {
         return
-                "Coordonees indiquees : " +
-                "hauteur = " + hauteur +
-                " & " +
-                " largeur = " + largeur
+                "Coordonees indiquees : "
+                        + "\n"+
+                "Largeur = " + largeur +
+                "\n"+" -- & -- " + "\n"+
+                "Hauteur = " + hauteur
                 ;
     }
 
-    public String getHauteur() {
-        return hauteur;
-    }
-
-    public void setHauteur(String hauteur) {
-        this.hauteur = hauteur;
-    }
-
-    public int getLargeur(){
+    public String getLargeur() {
         return largeur;
     }
-    public void setLargeur (int largeur){
+
+    public void setLargeur(String largeur) {
         this.largeur = largeur;
+    }
+
+    public int getLHauteur(){
+        return hauteur;
+    }
+    public void setHauteur (int hauteur){
+        this.hauteur = hauteur;
     }
 }

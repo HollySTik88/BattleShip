@@ -1,17 +1,29 @@
 public enum Flotte {
-    PORTE_AVION ("PA"),
-    CROISEUR ("C"),
-    CONTRE_TORPILLEUR ("CT"),
-    SOUS_MARIN ("SA"),
-    TORPILLEUR ("T");
+    P_A ("Porte-Avion",  5),
+    C ("Croiseur", 4),
+    C_T ("Contre-Torpilleur",  3),
+    S_M ("Sous-Marin",  3),
+    T ("Torpilleur", 2);
 
-    private String abreviation;
+    private String typeBateau;
+    private int taille;
 
-    Flotte(String abreviation){
-        this.abreviation = abreviation;
+    Flotte(String typeBateau, int taille){
+        this.typeBateau = typeBateau;
+        this.taille = taille;
     }
 
-    public String getAbreviation() {
-        return abreviation;
+    public String getTypeBateau() {
+        return typeBateau;
     }
+
+    public int getTaille() {
+        return taille;
+    }
+
+    public String toString() {
+        return "Type selectionne -> "  + typeBateau + " taille : " + taille ;
+    }
+
+
 }
