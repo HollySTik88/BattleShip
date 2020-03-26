@@ -22,6 +22,8 @@ public class Jeu {
         System.out.println(bateau1.getCoordonnees());
         System.out.println(bateau1.getEtatBateau());
 
+
+
     }
 
     // ici je suis sur la partie joueur je dois donc leurs demander de faire des actions "entrer des coordonées de  tir"
