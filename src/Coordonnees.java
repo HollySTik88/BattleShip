@@ -12,9 +12,9 @@ public class Coordonnees {
         return
                 "Coordonees de positionnement  : "
                         + "\n"+
-                "Largeur = " + largeur +
-                "\n"+" -- & -- " + "\n"+
-                "Hauteur = " + hauteur + "\n"
+                "     Largeur = " + largeur +
+                "\n"+"      -- & -- " + "\n"+
+                "     Hauteur = " + hauteur + "\n"
                 ;
     }
 

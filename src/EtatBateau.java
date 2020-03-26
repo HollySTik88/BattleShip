@@ -14,7 +14,10 @@ public enum EtatBateau {
     }
 
     public String toString() {
-        return "Etat actuel : " + etatBateau;
+        return
+                "         ----------------------------------------         "+"\n" +
+                "                 Etat actuel : " + etatBateau + "\n" +
+                "         ----------------------------------------         ";
 
     }
 }

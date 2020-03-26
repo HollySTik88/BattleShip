@@ -9,8 +9,8 @@ public class Jeu {
         Bateau bateau1 = new Bateau(c, Flotte.C, Orientation.S, EtatBateau.I);
         System.out.println(bateau1.getTypeBateau());
         System.out.println(bateau1.getOrientation());
-        System.out.println(bateau1.getEtatBateau());
         System.out.println(bateau1.getCoordonnees());
+        System.out.println(bateau1.getEtatBateau());
 
     }
 }

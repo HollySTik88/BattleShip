@@ -14,7 +14,7 @@ public enum Orientation {
         return orientation;
     }
     public String toString() {
-        return "Direction : " + orientation ;
+        return "     Direction : " + orientation + "\n";
 
     }
 
