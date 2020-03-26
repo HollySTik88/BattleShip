@@ -1,8 +1,8 @@
-public class Coordonees {
-    private int hauteur;
+public class Coordonnees {
+    private String hauteur;
     private int largeur;
 
-    public Coordonees (int hauteur, int largeur){
+    public Coordonnees (String hauteur, int largeur){
         this.hauteur = hauteur;
         this.largeur = largeur;
     }
@@ -15,11 +15,11 @@ public class Coordonees {
                 '}';
     }
 
-    public int getHauteur() {
+    public String getHauteur() {
         return hauteur;
     }
 
-    public void setHauteur(int hauteur) {
+    public void setHauteur(String hauteur) {
         this.hauteur = hauteur;
     }
 
