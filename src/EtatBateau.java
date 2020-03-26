@@ -21,3 +21,5 @@ public enum EtatBateau {
 
     }
 }
+
+// pour l'instant enum sur l'etat - chercher comment lier avec le break pour comptabiliser les coups

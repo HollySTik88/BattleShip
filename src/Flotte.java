@@ -5,6 +5,8 @@ public enum Flotte {
     S_M ("Sous-Marin",  3),
     T ("Torpilleur", 2);
 
+    // Voir si la modification CROISEUR (4); n'est pas plus optimisée -> programme simplifié au maximum ou programme détaillé ?
+
     private String typeBateau;
     private int taille;
 
