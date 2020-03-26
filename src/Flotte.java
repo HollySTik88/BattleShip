@@ -22,7 +22,9 @@ public enum Flotte {
     }
 
     public String toString() {
-        return "Type selectionne -> "  + typeBateau + " taille : " + taille ;
+        return "Bateau selectionne: " +
+                "\n" + "Type : " + typeBateau +
+                "\n" + "Taille : " + taille + "\n";
     }
 
 

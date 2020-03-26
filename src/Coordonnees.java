@@ -10,11 +10,11 @@ public class Coordonnees {
     @Override
     public String toString() {
         return
-                "Coordonees indiquees : "
+                "Coordonees de positionnement  : "
                         + "\n"+
                 "Largeur = " + largeur +
                 "\n"+" -- & -- " + "\n"+
-                "Hauteur = " + hauteur
+                "Hauteur = " + hauteur + "\n"
                 ;
     }
 

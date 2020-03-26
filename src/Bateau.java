@@ -3,22 +3,14 @@ public class Bateau {
     private Coordonnees coordonnees;
     private Flotte typeBateau;
     private Orientation orientation;
+    private EtatBateau etatBateau;
 
-    public Bateau (Coordonnees coordonnees, Flotte typeBateau, Orientation orientation ){
+    public Bateau (Coordonnees coordonnees, Flotte typeBateau, Orientation orientation, EtatBateau etatBateau ){
         this.coordonnees = coordonnees;
         this.typeBateau = typeBateau;
         this.orientation = orientation;
+        this.etatBateau = etatBateau;
     }
-
-    @Override
-    public String toString() {
-        return "Votre bateau : "
-                +"\n"+
-                typeBateau + "\n"+
-                orientation + "\n"+
-                ", " + coordonnees ;
-    }
-
 
     public Coordonnees getCoordonnees() {
         return coordonnees;
@@ -32,6 +24,7 @@ public class Bateau {
         return orientation;
     }
 
-
-
+    public EtatBateau getEtatBateau() {
+        return etatBateau;
+    }
 }
