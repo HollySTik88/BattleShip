@@ -26,7 +26,9 @@ public enum Orientation {
 
 }
 
-/*if orientation = sud
+/* A travailler
+
+if orientation = sud
    hauteurFin = indice hauteur [] + int flotte.getTaille
 
    if orientation = nord

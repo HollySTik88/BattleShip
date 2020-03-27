@@ -29,4 +29,3 @@ public class Bateau {
     }
 }
 
-// bateau ne renvois plus de to String mais conserve les données types d'un modele de bateau
