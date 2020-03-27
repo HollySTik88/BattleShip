@@ -34,6 +34,6 @@ public class Coordonnees {
     }
 }
 
-// pour l'instant la position est en "dure" mais normalement elle dois renvoyer aux coordonées d'un tableau
+// pour l'instant la position est en "dure" dans jeu mais normalement elle dois renvoyer aux coordonées d'un tableau
 // cette position donnera les cases couvertes sur la grilles s'articulant avec la taille (donc le modèle ) + l'orientation du bateau.
 // lorsqu'un bateau est placé, il faut enregistrer le recap des cases utilisées pour pouvoir comparer aux tirs

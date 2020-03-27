@@ -17,10 +17,14 @@ public class Jeu {
 
         Coordonnees c = new Coordonnees("A", 1);
         Bateau bateau1 = new Bateau(c, Flotte.C, Orientation.S, EtatBateau.I);
+        Tir t = new Tir ("C", 3);
+        Adversaire coup1 = new Adversaire(t);
+
         System.out.println(bateau1.getTypeBateau());
         System.out.println(bateau1.getOrientation());
         System.out.println(bateau1.getCoordonnees());
         System.out.println(bateau1.getEtatBateau());
+        System.out.println(coup1.getTir());
 
 
 

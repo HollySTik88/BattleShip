@@ -1,32 +1,39 @@
 
 public class Grille {
 
+    /* ce code n'est absolument pas optimisé - reste 3 errreurs et je fatigue ...
+doit encore renvoyer les deux coordonees + les enregistrer et faire le caclule de la place que prendra le bateau
+
+ */
+
     public static void main(String[] args) {
 
         String plateauJeu[][] = {{"1", "2", "3", "4", "5", "6", "4", "8", "9", "10"},
                 {"A", "B", "C", "D", "E", "F", "G", "H", "I", "J"}};
         int i = 0, j = 0;
 
-        carac = "";
+        String hauteur = "";
+        String largeur = "";
+        String reponse = "";
         Scanner sc = new Scanner(System.in);
 
         do {
             do {
                 i = 0;
-                System.out.println("Rentrez un entier entre 1 & 10 pour indiquer la hauteur SVP ");
+                System.out.println("Entrez un entier entre 1 & 10 pour indiquer la hauteur SVP ");
 
-                carac = sc.nextLine().charAt(0);
-                while (i < plateauJeu.length && carac != plateauJeu[i])
+                hauteur = sc.nextLine().charAt(0);
+                while (i < plateauJeu.length && hauteur != plateauJeu[i])
                     i++;
 
                 if (i < tableauCaractere.length)
-                    System.out.println(" La hauteur choisie est " + carac + " ");
+                    System.out.println(" La hauteur choisie est " + hauteur + " ");
 
-                else while (i >= tableauCaractere.length) ;
+                else while (i >= plateauJeu.length) ;
 
 
                 do {
-                    System.out.println( carac + "  n'est pas valide !  Voulez-vous essayer à nouveau ? (O/N)");
+                    System.out.println( hauteur + "  n'est pas valide !  Voulez-vous essayer à nouveau ? (O/N)");
                     reponse = sc.nextLine().charAt(0);
                 } while (reponse != 'N' && reponse != 'O');
             } while (reponse == 'O');
@@ -35,31 +42,29 @@ public class Grille {
 
             do {
                 j = 0;
-                System.out.println("Rentrez une lettre entre A & J pour indiquer la largeur SVP ");
+                System.out.println("Entrez une lettre entre A & J pour indiquer la largeur SVP ");
 
-                carac = sc.nextLine().charAt(0);
-                while (j < plateauJeu.length && carac != plateauJeu[j])
+                largeur = sc.nextLine().charAt(0);
+                while (j < plateauJeu.length && largeur != plateauJeu[j])
                     i++;
 
                 if (j < tableauCaractere.length)
-                    System.out.println(" La Largeur choisie est :  " + carac + " ");
+                    System.out.println(" La Largeur choisie est :  " + largeur + " ");
 
-                else while (j >= tableauCaractere.length) ;
-
-
+                else while (j >= plateauJeu.length) ;
                 do {
-                    System.out.println(carac + "  n'est pas valide !  Voulez-vous essayer à nouveau ? (O/N)");
+                    System.out.println(largeur + "  n'est pas valide !  Voulez-vous essayer à nouveau ? (O/N)");
                     reponse = sc.nextLine().charAt(0);
                 }
                 while (reponse != 'N' && reponse != 'O');
-            } if (reponse == 'N'); {
+            } while (reponse == '0');
 
-            System.out.println("Au revoir !"); }
+            System.out.println("Au revoir !");
+
+            System.out.println("Vos coordonees sont " + hauteur + " en hauteur et " + largeur + "en largeur");
 
         }
 
 
     }
 }
-
-// ce code n'est absolument pas optimisé - reste 4 errreurs et je fatigue ...
