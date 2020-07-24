@@ -28,3 +28,5 @@ public enum EtatBateau {
     EtatBateau = EtatBateau.T
     if 
  */
+
+ // plif plaf plouf la grenouille 
